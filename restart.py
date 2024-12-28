@@ -6,12 +6,26 @@ paper = "paper"
 scissors = "scissors"
 points_r1 = 0
 points_r2 = 0
+game_list = (rock, paper, scissors)
 
-# first inputs 
-r1_player_1 = input("Rock, paper or scissors? ").lower() 
-r1_player_2 = input("Rock, paper or scissors? ").lower()
 
-# decisions (first round) 
+while True:
+    # First inputs
+    r1_player_1 = input("Player 1: Rock, paper, or scissors? ").lower()
+    r1_player_2 = input("Player 2: Rock, paper, or scissors? ").lower()
+
+    # Check for valid inputs
+    if r1_player_1 not in game_list:
+        print("Player 1, choose a valid input: Rock, paper, or scissors.")
+        continue  # Go back to the start of the loop
+
+    if r1_player_2 not in game_list:
+        print("Player 2, choose a valid input: Rock, paper, or scissors.")
+        continue  # Go back to the start of the loop
+
+    # If both inputs are valid, break out of the loop
+    break
+
 
 
 # combinations w rock (1st round)
@@ -39,8 +53,25 @@ elif r1_player_2 == "paper" and r1_player_1 == "scissors":
 
 # Second round 
 print("SECOND ROUND!")
-r2_player_1 = input("Player 1 enter rock paper or scissors ")
-r2_player_2 = input("Player 2 enter rock paper or scissors ")
+
+while True:
+    # First inputs
+    r2_player_1 = input("Player 1: Rock, paper, or scissors? ").lower()
+    r2_player_2 = input("Player 2: Rock, paper, or scissors? ").lower()
+
+    # Check for valid inputs
+    if r2_player_1 not in game_list:
+        print("Player 1, choose a valid input: Rock, paper, or scissors.")
+        continue  # Go back to the start of the loop
+
+    if r2_player_2 not in game_list:
+        print("Player 2, choose a valid input: Rock, paper, or scissors.")
+        continue  # Go back to the start of the loop
+
+    # If both inputs are valid, break out of the loop
+    break
+
+
 
 # combinations w rock (2nd round)
 if r2_player_2 == "rock" and r2_player_1 == "scissors":
@@ -67,8 +98,23 @@ elif r2_player_2 == "paper" and r2_player_1 == "scissors":
     
 # THIRD ROUND
 print("THIRD ROUND! LAST ROUND.")
-r3_player_1 = input("Player 1 enter rock paper or scissors ")
-r3_player_2 = input("Player 2 enter rock paper or scissors ")
+
+while True:
+    # First inputs
+    r3_player_1 = input("Player 1: Rock, paper, or scissors? ").lower()
+    r3_player_2 = input("Player 2: Rock, paper, or scissors? ").lower()
+
+    # Check for valid inputs
+    if r3_player_1 not in game_list:
+        print("Player 1, choose a valid input: Rock, paper, or scissors.")
+        continue  # Go back to the start of the loop
+
+    if r3_player_2 not in game_list:
+        print("Player 2, choose a valid input: Rock, paper, or scissors.")
+        continue  # Go back to the start of the loop
+
+    # If both inputs are valid, break out of the loop
+    break
 
 # combinations w rock (2nd round)
 if r3_player_2 == "rock" and r3_player_1 == "scissors":
